@@ -37,8 +37,9 @@ set tm=500
 " Enable syntax highlighting
 syntax enable
 
-colorscheme desert
-set background=dark
+" colorscheme desert
+colorscheme monokai
+" set background=dark
 
 " Set utf8 as standard encoding and en_US as the standard language
 set encoding=utf8
