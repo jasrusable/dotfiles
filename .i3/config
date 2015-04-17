@@ -154,7 +154,12 @@ bar {
 
 bindsym $mod+c exec chromium
 bindsym $mod+t exec subl
-bindsym $mod+s exec --no-startup-id "i3lock && systemctl suspend"
+bindsym $mod+Shift+s exec --no-startup-id "i3lock && systemctl suspend"
+bindsym $mod+F9 exec pactl set-sink-volume 1 '20%'
+bindsym $mod+F10 exec pactl set-sink-volume 1 '35%'
+bindsym $mod+F11 exec pactl set-sink-volume 1 '50%'
+bindsym $mod+F12 exec pactl set-sink-volume 1 '70%'
+bindsym $mod+m exec pactl set-sink-volume 1 0
 
 exec --no-startup-id nm-applet
 
