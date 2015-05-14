@@ -54,3 +54,5 @@ set tabstop=4
 
 " Always show the status line
 set laststatus=2
+
+set number
