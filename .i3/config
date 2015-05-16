@@ -160,13 +160,12 @@ bar {
         }
 }
 
-workspace_auto_back_and_forth yes
-
+bindsym $mod+q workspace back_and_forth
 bindsym $mod+c exec chromium
 bindsym $mod+t exec subl
 bindsym $mod+Shift+s exec --no-startup-id "i3lock && systemctl suspend"
-bindsym $mod+F9 exec pactl set-sink-volume 1 '20%'
-bindsym $mod+F10 exec pactl set-sink-volume 1 '30%'
+bindsym $mod+F9 exec pactl set-sink-volume 1 '15%'
+bindsym $mod+F10 exec pactl set-sink-volume 1 '25%'
 bindsym $mod+F11 exec pactl set-sink-volume 1 '50%'
 bindsym $mod+F12 exec pactl set-sink-volume 1 '70%'
 bindsym $mod+m exec pactl set-sink-volume 1 0
