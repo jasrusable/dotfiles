@@ -163,12 +163,15 @@ bar {
 bindsym $mod+q workspace back_and_forth
 bindsym $mod+c exec chromium
 bindsym $mod+t exec subl
+bindsym $mod+y exec atom
 bindsym $mod+Shift+s exec --no-startup-id "i3lock && systemctl suspend"
-bindsym $mod+F9 exec pactl set-sink-volume 1 '15%'
-bindsym $mod+F10 exec pactl set-sink-volume 1 '25%'
-bindsym $mod+F11 exec pactl set-sink-volume 1 '50%'
-bindsym $mod+F12 exec pactl set-sink-volume 1 '70%'
-bindsym $mod+m exec pactl set-sink-volume 1 0
+bindsym $mod+F9 exec amixer -q set Master toggle
+bindsym $mod+F10 exec amixer -q set Master 1%- unmute
+bindsym $mod+F11 exec amixer -q set Master 1%+ unmute
+
+bindsym XF86AudioLowerVolume exec amixer -q set Master 1%- unmute
+bindsym XF86AudioRaiseVolume exec amixer -q set Master 1%+ unmute
+bindsym XF86AudioMute exec amixer -q set Master toggle
 
 exec --no-startup-id nm-applet
 
