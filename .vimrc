@@ -38,8 +38,9 @@ set tm=500
 syntax enable
 
 " colorscheme desert
-colorscheme monokai
-" set background=dark
+" colorscheme monokai
+colorscheme solarized
+set background=light
 
 " Set utf8 as standard encoding and en_US as the standard language
 set encoding=utf8
@@ -56,3 +57,4 @@ set tabstop=4
 set laststatus=2
 
 set number
+
