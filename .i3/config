@@ -161,6 +161,7 @@ bindsym $mod+c exec chromium
 bindsym $mod+t exec subl
 bindsym $mod+y exec atom
 bindsym $mod+Shift+s exec --no-startup-id "i3lock && systemctl suspend"
+bindsym $mod+Shift+x exec --no-startup-id "i3lock"
 bindsym $mod+F9 exec amixer -q set Master toggle
 bindsym $mod+F10 exec amixer -q set Master 1%- unmute
 bindsym $mod+F11 exec amixer -q set Master 1%+ unmute
