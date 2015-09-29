@@ -161,7 +161,7 @@ bindsym $mod+c exec chromium
 bindsym $mod+t exec subl
 bindsym $mod+y exec atom
 bindsym $mod+Shift+s exec --no-startup-id "i3lock && systemctl suspend"
-bindsym $mod+Shift+x exec --no-startup-id "i3lock"
+bindsym $mod+Shift+x exec --no-startup-id "gnome-screenshot -f tmp/fakeD.png && convert tmp/fakeD.png -channel RGBA -blur 0x4 tmp/fakeD.png  &&  i3lock -i tmp/fakeD.png -n"
 bindsym $mod+F9 exec amixer -q set Master toggle
 bindsym $mod+F10 exec amixer -q set Master 7%- unmute
 bindsym $mod+F11 exec amixer -q set Master 7%+ unmute
