@@ -163,14 +163,14 @@ bindsym $mod+y exec atom
 bindsym $mod+Shift+s exec --no-startup-id "i3lock && systemctl suspend"
 bindsym $mod+Shift+x exec --no-startup-id "i3lock"
 bindsym $mod+F9 exec amixer -q set Master toggle
-bindsym $mod+F10 exec amixer -q set Master 1%- unmute
-bindsym $mod+F11 exec amixer -q set Master 1%+ unmute
+bindsym $mod+F10 exec amixer -q set Master 7%- unmute
+bindsym $mod+F11 exec amixer -q set Master 7%+ unmute
 
-bindsym XF86AudioLowerVolume exec amixer -q set Master 1%- unmute
-bindsym XF86AudioRaiseVolume exec amixer -q set Master 1%+ unmute
+bindsym XF86AudioLowerVolume exec amixer -q set Master 7%- unmute
+bindsym XF86AudioRaiseVolume exec amixer -q set Master 7%+ unmute
 bindsym XF86AudioMute exec amixer -q set Master toggle
 
-bindsym XF86MonBrightnessUp exec xbacklight -inc 10
-bindsym XF86MonBrightnessDown exec xbacklight -dec 10
+bindsym XF86MonBrightnessUp exec xbacklight -inc 15
+bindsym XF86MonBrightnessDown exec xbacklight -dec 15
 
 exec --no-startup-id nm-applet
