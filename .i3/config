@@ -157,7 +157,7 @@ bar {
 
 
 bindsym $mod+q workspace back_and_forth
-bindsym $mod+c exec chromium
+bindsym $mod+c exec "chromium --force-device-scale-factor=1.2"
 bindsym $mod+t exec subl
 bindsym $mod+y exec atom
 bindsym $mod+Shift+s exec --no-startup-id "i3lock -d -c 333333 && systemctl suspend"
