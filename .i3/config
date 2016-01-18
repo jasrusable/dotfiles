@@ -174,3 +174,4 @@ bindsym XF86MonBrightnessUp exec xbacklight -inc 15
 bindsym XF86MonBrightnessDown exec xbacklight -dec 15
 
 exec --no-startup-id nm-applet
+exec --no-startup-id xset m 4 1
