@@ -160,8 +160,8 @@ bindsym $mod+q workspace back_and_forth
 bindsym $mod+c exec chromium
 bindsym $mod+t exec subl
 bindsym $mod+y exec atom
-bindsym $mod+Shift+s exec --no-startup-id "i3lock -d -c 333333 && systemctl suspend"
-bindsym $mod+Shift+x exec --no-startup-id "i3lock -d -c 333333"
+bindsym $mod+Shift+s exec --no-startup-id "i3lock -c 333333; systemctl suspend"
+bindsym $mod+Shift+x exec --no-startup-id "i3lock -c 333333; sleep 1; xset dpms force off"
 bindsym $mod+F9 exec amixer -q set Master toggle
 bindsym $mod+F10 exec amixer -q set Master 7%- unmute
 bindsym $mod+F11 exec amixer -q set Master 7%+ unmute
