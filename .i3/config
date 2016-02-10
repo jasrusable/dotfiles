@@ -157,9 +157,8 @@ bar {
 
 
 bindsym $mod+q workspace back_and_forth
-bindsym $mod+c exec chromium
-bindsym $mod+t exec subl
-bindsym $mod+y exec atom
+bindsym $mod+c exec chromium --force-device-scale-factor=1.3
+bindsym $mod+t exec atom
 bindsym $mod+Shift+s exec --no-startup-id "i3lock -c 333333; systemctl suspend"
 bindsym $mod+Shift+x exec --no-startup-id "i3lock -c 333333; sleep 1; xset dpms force off"
 bindsym $mod+F9 exec amixer -q set Master toggle
