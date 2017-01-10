@@ -169,6 +169,7 @@ bindsym $mod+Shift+x exec --no-startup-id "i3lock -c 333333; sleep 1; xset dpms 
 # Screen layouts
 bindsym $mod+Control+l exec ~/.screenlayout/laptop_only.sh
 bindsym $mod+Control+f exec ~/.screenlayout/ifix.sh
+bindsym $mod+Shift+t exec --no-startup-id "bash ~/.config/i3/tradesnake.sh"
 
 # Audio stuff
 bindsym $mod+F9 exec amixer -q set Master toggle
