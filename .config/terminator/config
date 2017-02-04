@@ -9,10 +9,11 @@
     visible_bell = True
     background_image = None
     use_system_font = False
-    foreground_color = "#ffffff"
+    foreground_color = "#839496"
     scroll_on_output = False
     show_titlebar = False
     copy_on_selection = True
+    background_color = "#002b36"
 [layouts]
   [[default]]
     [[[child1]]]
