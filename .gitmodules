@@ -1,0 +1,3 @@
+[submodule "/home/jason/.zprezto"]
+	path = /home/jason/.zprezto
+	url = git@github.com:jasrusable/prezto.git
